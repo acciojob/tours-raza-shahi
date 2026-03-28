@@ -13,7 +13,7 @@ const Tour = ({ id, image, info, name, price ,removeTour }) => {
       <p id={`tour-item-para-${id}`}>
         {readMore ? info : `${info.substring(0, 200)}...`}
         <button id={`see-more-${id}`} onClick={() => setReadMore(!readMore)}>
-          {readMore ? "show less" : "See more"}
+          {readMore ? "Show less" : "See more"}
         </button>
       </p>
       <button className="delete-btn" id={`delete-btn-${id}`} onClick={() => removeTour(id)}>
